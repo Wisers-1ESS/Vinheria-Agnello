@@ -26,3 +26,47 @@ header nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.vinhos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.vinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.vinho img {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    object-fit:contain;
+}
+
