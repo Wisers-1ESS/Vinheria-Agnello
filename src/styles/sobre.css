@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #5e2129;
+    color: #fff;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    min-height: 100vh;
+    margin-bottom: 150px;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #5e2129;
+    color: #fff;
+}
+
+h1 {
+    animation: 2s normal fadetitle;
+}
+
+/* Sobre nós | Titulo e Subtitulo */
+
+.subtitulo {
+
+    width: 800px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    white-space: pre-line;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: justify;
+    animation: fade 2s normal;
+}
+
+.centro {
+    height: 600px;
+    margin-top: 18px;
+    background-color: #4b1e24;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+
+.box-subtitulo-imagem {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* equipe */
+
+
+.nossa-equipe-title {
+    color: #fdfdfd;
+    position: absolute;
+    bottom: 120px;
+    left: 50px;    
+}
+
+.equipe {
+    max-width: 700px;
+}
+
+.equipe img {
+    height: 150px;
+    border-radius: 200px;
+    margin: 16px;
+}
+
+.centro-equipe {
+    height: 450px;
+    margin-top: 18px;
+    background-color: #4b1e24;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+.bold {
+    font-size: 28px;
+}
+
+@keyframes fadetitle {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
