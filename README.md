@@ -22,12 +22,12 @@
 
 <h2>Estruturação</h2>
 
-<h3>Menu</h3>
+### Menu
 
 <p>O menu foi estruturado da seguinte forma, o primeiro elemento é o header, dentro dele existe a área de navegação (nav) que é composta por uma lista não ordenada com os hyperlinks para as páginas do site.</p>
 
 
-<h3>🍷Página de Vinhos🍷</h3>
+### 🍷Página de Vinhos🍷
 
 <p>A página de vinhos se incia com o menu, e logo depois uam div main, dentro dela está uma section que é responsável por agrupar os elementos relacionados ao catálogo de vinhos.</p>
 
@@ -40,3 +40,18 @@
 <p>Por fim, vem diversas divs com a classe "vinho" que armazena a imagem <b>(img)</b>, título <b>(h1)</b>, descrição e preço <b>(p)</b> de cada um dos vinhos disponíveis. </p>
 
 
+### Sobre nós 📢
+
+> Header
+
+<p>O HTML da página Sobre inicia com o Header onde usamos "ul" e "li" para fazer a lista de páginas clicáveis, utilizando o  "href" para redirecionar para cada página solicitada.</p>
+
+> Main
+
+<p>Na parte "Main" do HTML foi iniciado com uma "section", onde foi utilizado o "H1" para fazer o título da página, seguido de uma Div com um "p" dentro para fazer o texto do conteúdo da página. Ao lado do texto foi utilizado uma imagem pela tag "img" de um vinho para deixar a página mais intuitiva.</p>
+
+<p>Há uma segunda "section" onde foi utilizada da mesma forma que a anterior, mas para mostrar-mos a nossa equipe.</p>
+
+> Footer
+
+<p>Por fim, o Footer do site.</p>
