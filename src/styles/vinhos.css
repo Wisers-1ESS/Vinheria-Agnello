@@ -1,7 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
 }
 
 header {
@@ -9,7 +16,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #5e2129;
     color: #fff;
 }
 
@@ -27,12 +34,18 @@ header nav ul li a {
     color: #fff;
 }
 
+h1 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #5e2129;
     color: #fff;
 }
 
@@ -59,6 +72,8 @@ section {
     align-items: center;
     text-align: center;
     padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
 }
 
 .vinho img {
@@ -68,5 +83,18 @@ section {
     width: 300px;
     height: 300px;
     object-fit:contain;
+}
+
+.vinho button {
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #5e2129;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
 }
 
