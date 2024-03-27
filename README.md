@@ -31,11 +31,11 @@
 
 <p>A página de vinhos se incia com o menu, e logo depois uam div main, dentro dela está uma section que é responsável por agrupar os elementos relacionados ao catálogo de vinhos.</p>
 
-<h4>Section</h4>
+> Section
 
 <p>Dentro dela possui uma tag H1 para o título e uma tag p para um breve comentário e logo em seguida vem a div "vinhos" que agrupou todos os vinhos do catálogo.</p>
 
-<h4>Vinhos</h4>
+> Vinhos
 
 <p>Por fim, vem diversas divs com a classe "vinho" que armazena a imagem <b>(img)</b>, título <b>(h1)</b>, descrição e preço <b>(p)</b> de cada um dos vinhos disponíveis. </p>
 
@@ -51,6 +51,16 @@
 <p>Na parte "Main" do HTML foi iniciado com uma "section", onde foi utilizado o "H1" para fazer o título da página, seguido de uma Div com um "p" dentro para fazer o texto do conteúdo da página. Ao lado do texto foi utilizado uma imagem pela tag "img" de um vinho para deixar a página mais intuitiva.</p>
 
 <p>Há uma segunda "section" onde foi utilizada da mesma forma que a anterior, mas para mostrar-mos a nossa equipe.</p>
+
+
+### Quiz sobre Vinho
+
+<p>A página de vinhos contem um quiz sobre vinhos para identificar os gostos do usuario, com diversas perguntas para os ajudarem a indentificar seus gostos</p>
+
+> Section
+
+<p>Na página existe uma lista de perguntas com opções que vão de a-d onde cada opção possui um botão pressionavel.</p>
+
 
 > Footer
 
