@@ -67,16 +67,16 @@ body {
     color: #fff;
 }
 
-#mercado {
+#mercado, #quiz, #sobrenós {
     background-color: #551616;
 }
 
-#mercado p {
+#mercado p, #quiz p, #Sobrenós p {
     font-size: 18px;
     color: #fff;
 }
 
-#mercado a {
+#mercado a, #quiz a, #Sobrenós a, #contato a {
     font-size: 18px;
     color: #fff;
 }
@@ -86,7 +86,7 @@ body {
     padding: 60px 0;
 }
 
-#Sobrenós h2 {
+#Sobrenós h2, #quiz h2 {
     font-size: 32px;
     color: #fff;
 }
@@ -149,7 +149,6 @@ body {
 }
 
 footer {
-    background-color: #000000;
     color: #000000;
     text-align: center;
     padding: 30px;
