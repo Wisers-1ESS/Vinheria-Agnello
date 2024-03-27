@@ -65,3 +65,17 @@
 > Footer
 
 <p>Por fim, o Footer do site.</p>
+
+### Contatos 💬 
+
+>Header
+
+<p>A página de Contatos se incia com o menu, e logo depois uam div main, dentro dela está uma section que é responsável por agrupar os elementos relacionados ao contato da empresa.</p>
+
+>Section
+
+<p> >Na parte "Main" do HTML foi iniciado com uma "section", onde foi utilizado o "H1" para fazer o título da página, seguido de de um "h2" destacar a frase "Entre em contato conosco via". Seguindo, vem uma Div com um "p" dentro para fazer o texto principal da página. Ao lado do texto foi utilizado uma imagem pela tag "img" da nossa logo, para deixar a página mais preenchida e bonita visualmente.</p>
+
+>Footer
+
+<p>Por fim o footer padrão do site.</p>#
