@@ -148,6 +148,15 @@ body {
     flex-direction: column;
 }
 
+#LinksFooter ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#LinksFooter ul li a:hover{
+    color: #551616;
+}
+
 footer {
     color: #000000;
     text-align: center;
