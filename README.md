@@ -78,4 +78,4 @@
 
 >Footer
 
-<p>Por fim o footer padrão do site.</p>#
+<p>Por fim o footer padrão do site.</p>
