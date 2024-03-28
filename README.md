@@ -26,6 +26,18 @@
 
 <p>O menu foi estruturado da seguinte forma, o primeiro elemento é o header, dentro dele existe a área de navegação (nav) que é composta por uma lista não ordenada com os hyperlinks para as páginas do site.</p>
 
+### Página Principal
+
+<p>A página principal se inicia em uma lista de navegação (ul e li) mostrando as sessões da propria página, sendo elas a descrição principal.</p>
+
+> Section
+
+<p> Dentro da página principal, é possivel perceber que foi utilizado um "carrousel" para fazer um design de fotos dentro do site, mostrando as melhores fotos da vinheria.</p>
+
+> Sections e Final
+
+<p>Dentro das sections foram introduzidos textos e links através da tag <a href=""></a> para levar quem clicar no texto a outra página, sendo ela a respectiva mostrada dentro do site. </p>
+<p>No final do site temos a tag footer, que é o rodapé da página. Nele foi feito o "&copy Vinheria Agnello. Todos os direitos reservados." como forma de copyrigth, além de ter mais uma sessão em forma de lista levando as respectivas sessões listadas dentro da mesma página.
 
 ### 🍷Página de Vinhos🍷
 
@@ -61,10 +73,6 @@
 
 <p>Na página existe uma lista de perguntas com opções que vão de a-d onde cada opção possui um botão pressionavel.</p>
 
-
-> Footer
-
-<p>Por fim, o Footer do site.</p>
 
 ### Contatos 💬 
 
