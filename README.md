@@ -3,12 +3,12 @@
 
 <h2>Integrantes</h2>
 
-<h3><a href="https://github.com/Enzo-Miletta" target="_blank">Enzo Miletta</a><br>
-<a href="https://github.com/Lucas-Son" target="_blank">Lucas Son</a><br>
-<a href="https://github.com/MaahTorro" target="_blank">Marcela Torro</a><br>
-<a href="https://github.com/Matheus-V-Alves" target="_blank">Matheus V. Alves</a><br>
-<a href="https://github.com/Mats057" target="_blank">Matheus Q. Zanutin</a><br>
-<a href="https://github.com/werbethnunes" target="_blank">Werbeth Nunes</a><br>
+<h3><a href="https://github.com/Enzo-Miletta" target="_blank">Enzo Miletta - RM 98677</a><br>
+<a href="https://github.com/Lucas-Son" target="_blank">Lucas Son - RM554724</a><br>
+<a href="https://github.com/MaahTorro" target="_blank">Marcela Torro - RM 557658</a><br>
+<a href="https://github.com/Matheus-V-Alves" target="_blank">Matheus V. Alves - RM555177</a><br>
+<a href="https://github.com/Mats057" target="_blank">Matheus Q. Zanutin - RM558801</a><br>
+<a href="https://github.com/werbethnunes" target="_blank">Werbeth Nunes - RM559067</a><br>
 
 <h2>Estruturação</h2>
 
@@ -77,3 +77,57 @@
 >Footer
 
 <p>Por fim o footer padrão do site.</p>
+
+### Página Principal:
+<h3>Página Principal</h3>
+
+<p>A página principal se inicia em uma lista de navegação (ul e li) mostrando as sessões da propria página, sendo elas a descrição principal.</p>
+
+<h4>Section</h4>
+
+<p> Dentro da página principal, é possivel perceber que foi utilizado um "carrousel" para fazer um design de fotos dentro do site, mostrando as melhores fotos da vinheria.</p>
+
+<h4>Sections e Final</h4>
+
+<p>Dentro das sections foram introduzidos textos e links através da tag "<a href=""></a>" para levar quem clicar no texto a outra página, sendo ela a respectiva mostrada dentro do site. "</p>"
+<p>No final do site temos a tag footer, que é o rodapé da página. Nele foi feito o "&copy Vinheria Agnello. Todos os direitos reservados." como forma de copyrigth, além de ter mais uma sessão em forma de lista levando as respectivas sessões listadas dentro da mesma página.
+  >footer
+  <p>Por fim o footer padrão da página, com mais uma sessão levando as outras páginas.</p>
+
+### Site do Quiz (Nosso diferencial)
+<h1>Checkpoint 01 de Front-End</h1>
+
+
+<h2>Objetivos:</h2>
+
+<ul>
+<li>Desenvolver um site com pelo menos 5 seções (páginas), em diferentes arquivos HTML. Ele terá conteúdo, imagens, hyperlinks, estrutura e SEO. O assunto do projeto é o caso da Vinheira Agnello.</li>
+
+<li>Estrutura completa em HTML do projeto de acordo com o estudo de caso.</li>
+
+<li>Uso das tag corretamente: tags containers + tags multimídia + tags de texto + tags semânticas.</li>
+
+<li>Construção da página principal (index.html) + 4 páginas a escolha do grupo.</li>
+
+<li>Desenvolver o README descrevendo a estrutura do projeto.</li>
+</ul>
+
+<h2>Critérios de avaliação:</h2> 
+<ul>
+<li>Estrutura do site (organização), design e estética, códigos HTML e CSS (CSS opcional), conteúdo e qualidade.</li>
+</ul>
+
+<h2>Estruturação</h2>
+
+<h3>Menu</h3>
+
+<p>O menu foi estruturado da seguinte forma, o primeiro elemento é o header, dentro dele existe a área de navegação (nav) que é composta por uma lista não ordenada com os hyperlinks para as páginas do site.</p>
+
+
+<h3>Quiz sobre Vinho</h3>
+
+<p>A página de vinhos contem um quiz sobre vinhos para identificar os gostos do usuario, com diversas perguntas para os ajudarem a indentificar seus gostos</p>
+
+<h4>Section</h4>
+
+<p>Na pagina existe uma lista de perguntas com opções que vão de a-d onde cada opção possui um botão pressionavel.
