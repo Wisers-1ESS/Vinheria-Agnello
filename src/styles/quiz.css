@@ -60,3 +60,8 @@ footer {
     background-color: #5e2129;
     color: #fff;
 }
+
+.pergunta {
+    width: 80%;
+    margin-bottom: 16px;
+}
