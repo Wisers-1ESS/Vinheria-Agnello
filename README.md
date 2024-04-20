@@ -49,23 +49,23 @@
 
 **Deve conter:**
 
-- Tela inicial perguntando se o usuário possui mais de 18 anos
+- Tela inicial perguntando se o usuário possui mais de 18 anos - Enzo
     - Caso seja menor de idade, redirecionar para outro site
     - Caso seja maior, redirecionar para home page
-- Botão de compra para cada vinho
+- Botão de compra para cada vinho - M. Queiroz
     - Levar para uma página de mais detalhes do vinho e lá dentro, ao comprar, gerar um pop up com a mensagem(adicionado ao carrinho com sucesso)
-- Calculadora de preços baseado na quantidade de garrafas
+- Calculadora de preços baseado na quantidade de garrafas - Enzo
     - Dependendo de quantas garrafas a pessoa escolher, vai mostrando o valor total
-- Página de login simples
+- Página de login simples - Marcela
     - If e else com login genérico(1234 como login e senha)
-- Opção de cupom de desconto. Ao digitar no campo de desconto e clicar em Aplicar:
+- Opção de cupom de desconto. Ao digitar no campo de desconto e clicar em Aplicar - Lucas
     - Se o cupom for FIAP2024 o preço terá 10% de desconto
-- Sugestão de combinações de comidas baseados no vinho
+- Sugestão de combinações de comidas baseados no vinho - Lucas
     - Página de sugestões que baseado na escolha do vinho, a página mostra algumas receitas que combinam.
-- Formulário de contato
+- Formulário de contato - M. Vinícius
     - Formulário simples de contato com Nome, telefone, email e mensagem e um botão enviar que irá gerar um pop up de mensagem enviada com sucesso.
 
 ## Opcionais
 
-- Sistema de avaliações de comentários
-- Botão de favoritar e lista de desejos
+- Sistema de avaliações de comentários - M. Vinícius
+- Botão de favoritar e lista de desejos - M. Queiroz
