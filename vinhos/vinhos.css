@@ -85,7 +85,7 @@ section {
     object-fit:contain;
 }
 
-.vinho button {
+.vinho a {
     margin: 1rem 0 0 0;
     padding: 1rem;
     width: 100%;
@@ -96,6 +96,8 @@ section {
     cursor: pointer;
     font-weight: 600;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 .vinho .actions {
