@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -11,44 +6,12 @@ body {
     background-color: #f5f5dc;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #5e2129;
-    color: #fff;
-}
-
-header nav ul {
-    display: flex;
-}
-
-header nav ul li {
-    list-style: none;
-    margin: 1rem;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
 
 h1 {
     text-align: center;
     margin: 1rem;
     font-size: 2rem;
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #5e2129;
-    color: #fff;
-}
-
 section {
     display: flex;
     flex-direction: column;
