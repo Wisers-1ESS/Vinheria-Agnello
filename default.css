@@ -33,10 +33,12 @@ header nav ul li a {
 
 footer {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 1rem;
     background-color: #5e2129;
     color: #fff;
+    position: fixed;
+    bottom: 0;
 }
