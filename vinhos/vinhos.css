@@ -6,6 +6,9 @@ body {
     background-color: #f5f5dc;
 }
 
+main{
+    margin-bottom: 2rem;
+}
 
 h1 {
     text-align: center;
