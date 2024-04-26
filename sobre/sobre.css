@@ -40,8 +40,7 @@ h1 {
 /* Sobre nós | Titulo e Subtitulo */
 
 .subtitulo {
-
-    width: 800px;
+    margin-right: 1rem;
     color: rgb(255, 255, 255);
     text-align: left;
     white-space: pre-line;
@@ -52,10 +51,11 @@ h1 {
 }
 
 .centro {
-    height: 600px;
+    height: fit-content;
     margin-top: 18px;
     background-color: #4b1e24;
     display: flex;
+    padding: 2rem;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
@@ -124,4 +124,11 @@ h1 {
     100% {
         opacity: 100%;
     }
+}
+
+@media screen and (max-width:1240px) {
+    /*.centro{ 
+        height: fit-content;
+        padding: 1rem;
+     } */
 }
