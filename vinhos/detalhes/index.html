@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinho</title>
+    <link rel="stylesheet" href="./detalhes.css">
+    <link rel="stylesheet" href="../../default.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../vinhos/index.html">Vinhos</a></li>
+                <li><a href="../quiz/index.html">Quiz</a></li>
+                <li><a href="../sobre/index.html">Sobre nós</a></li>
+                <li><a href="../contato/index.html">Contato</a></li>
+                <li><a href="../Login/login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="vinho">
+                <img src="../../assets/vinhos/default.svg" alt="Vinho" id="imagem">
+                <div class="infos">
+                    <h2 id="nome">Nome do Vinho</h2>
+                    <p id="descricao">Descrição do Vinho</p>
+                    <p id="preco">Preço</p>
+                                                                <!-- AQUI É PRA FAZER O SISTEMA DE QUANTIDADE -- ENZO -->
+                    <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <span>1</span>
+                        <button onclick="aumentar()">+</button>
+                    </div>
+                    <a onclick="comprar()" class="buy">Comprar</a>
+                                                                <!-- AQUI É PRA FAZER O SISTEMA DE CUPOM -- LUCAS -->
+                    <div class="cupom">
+                        <input type="text" id="cupom" placeholder="Cupom de desconto">
+                        <button onclick="aplicarCupom()">Aplicar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Sugestão de combinações</h2>
+                                                                <!-- AQUI É PRA ADICIONAR AS RECEITAS E SUGESTÕES -- LUCAS -->
+        </section>
+    </main>
+    <script src="detalhes.js"></script>
+    <footer>
+        <p>&copy; 2024 - Vinharia Agnello</p>
+    </footer>
+</body>
+</html>

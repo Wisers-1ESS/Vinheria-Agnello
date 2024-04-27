@@ -1,37 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5dc;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #5e2129;
-    color: #fff;
-}
-
-header nav ul {
-    display: flex;
-}
-
-header nav ul li {
-    list-style: none;
-    margin: 1rem;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
 }
 
 main {
@@ -69,8 +40,7 @@ h1 {
 /* Sobre nós | Titulo e Subtitulo */
 
 .subtitulo {
-
-    width: 800px;
+    margin-right: 1rem;
     color: rgb(255, 255, 255);
     text-align: left;
     white-space: pre-line;
@@ -81,10 +51,11 @@ h1 {
 }
 
 .centro {
-    height: 600px;
+    height: fit-content;
     margin-top: 18px;
     background-color: #4b1e24;
     display: flex;
+    padding: 2rem;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
@@ -153,4 +124,11 @@ h1 {
     100% {
         opacity: 100%;
     }
+}
+
+@media screen and (max-width:1240px) {
+    /*.centro{ 
+        height: fit-content;
+        padding: 1rem;
+     } */
 }
