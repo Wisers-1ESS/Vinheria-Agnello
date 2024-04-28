@@ -6,6 +6,10 @@ body{
     background-color: #f5f5dc;
 }
 
+main{
+    margin-bottom: 2rem;
+}
+
 section{
     display: flex;
     flex-direction: column;

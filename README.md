@@ -54,7 +54,7 @@
     - Caso seja maior, redirecionar para home page
 - Botão de compra para cada vinho - M. Queiroz
     - Levar para uma página de mais detalhes do vinho e lá dentro, ao comprar, gerar um pop up com a mensagem(adicionado ao carrinho com sucesso)
-- Calculadora de preços baseado na quantidade de garrafas - Enzo
+- Calculadora de preços baseado na quantidade de garrafas - Matheus
     - Dependendo de quantas garrafas a pessoa escolher, vai mostrando o valor total
 - Página de login simples - Marcela
     - If e else com login genérico(1234 como login e senha)

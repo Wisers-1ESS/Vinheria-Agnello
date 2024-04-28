@@ -1,6 +1,8 @@
 var total = 0;
 var vinho = null;
+var desconto = 0;
 var quantidade = document.getElementById("quantidade");
+const precoElement = document.getElementById('preco');
 quantidade.innerHTML = 1;
 fetch("../../assets/vinhos/vinhos.json").then((response) => {
     response.json().then((data) => {
@@ -38,7 +40,7 @@ var comprar = () => {
     //    total = localStorage.getItem("total");
     //    total = parseFloat(total) + (vinho.preco * parseInt(quantidade.innerHTML));
     //}else{
-        total = vinho.preco * parseInt(quantidade.innerHTML);
+        calculaTotal();
     //}
     //localStorage.setItem("total", total);
     alert(parseInt(quantidade.innerHTML)+' '+vinho.nome+' adicionado(s) ao carrinho, Total: R$ '+total.toFixed(2).replace('.', ','));
@@ -46,31 +48,20 @@ var comprar = () => {
 }
 
 var aumentar = () => {
-    var quantidade = document.getElementById("quantidade");
     quantidade.innerHTML = parseInt(quantidade.innerHTML) + 1;
+    calculaTotal();
+    precoElement.innerText = `R$ ${total.toFixed(2)}`;
 }
 
 var diminuir = () => {
-    var quantidade = document.getElementById("quantidade");
     if (parseInt(quantidade.innerHTML) > 1) {
         quantidade.innerHTML = parseInt(quantidade.innerHTML) - 1;
     }
+    calculaTotal();
+    precoElement.innerText = `R$ ${total.toFixed(2)}`;
 }
-function aplicarCupom() {
-    const cupomInput = document.getElementById('cupom');
-    const cupom = cupomInput.value.trim();
 
-    if (cupom === 'FIAP2024') {
-        const precoElement = document.getElementById('preco');
-        const precoTexto = precoElement.innerText;
-        const precoNumerico = parseFloat(precoTexto.replace('R$ ', ''));
-        const precoComDesconto = precoNumerico * 0.9;
-        precoElement.innerText = `R$ ${precoComDesconto.toFixed(2)}`;
-        alert(`Preço com desconto: R$ ${precoComDesconto.toFixed(2)}`);
-    } else {
-        alert('Cupom inválido. Por favor, insira um cupom válido.');
-    }
-}
+
 let descontoAplicado = false;
 function aplicarCupom() {
     if (descontoAplicado) {
@@ -80,17 +71,16 @@ function aplicarCupom() {
     const cupomInput = document.getElementById('cupom');
     const cupom = cupomInput.value.trim();
     if (cupom === 'FIAP2024') {
-        const precoElement = document.getElementById('preco');
-        const precoTexto = precoElement.innerText;
-        const precoNumerico = parseFloat(precoTexto.replace('R$ ', ''));
-        const precoComDesconto = precoNumerico * 0.9;   
-        precoElement.innerText = `R$ ${precoComDesconto.toFixed(2)}`;
-        alert(`Preço com desconto: R$ ${precoComDesconto.toFixed(2)}`);        
+        desconto = 0.1;
+        calculaTotal();   
+        precoElement.innerText = `R$ ${total.toFixed(2)}`;
+        alert(`Preço com desconto: R$ ${total.toFixed(2)}`);        
         descontoAplicado = true;
     } else {
         alert('Cupom inválido. Por favor, insira um cupom válido.');
     }
 }
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -103,4 +93,8 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+calculaTotal = () => {
+    total = (vinho.preco * parseInt(quantidade.innerHTML))* (1-desconto);
 }
