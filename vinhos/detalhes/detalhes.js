@@ -30,3 +30,51 @@ var comprar = () => {
     alert("Vinho adicionado ao carrinho");
     window.location = "../";
 }
+function aplicarCupom() {
+    const cupomInput = document.getElementById('cupom');
+    const cupom = cupomInput.value.trim();
+
+    if (cupom === 'FIAP2024') {
+        const precoElement = document.getElementById('preco');
+        const precoTexto = precoElement.innerText;
+        const precoNumerico = parseFloat(precoTexto.replace('R$ ', ''));
+        const precoComDesconto = precoNumerico * 0.9;
+        precoElement.innerText = `R$ ${precoComDesconto.toFixed(2)}`;
+        alert(`Preço com desconto: R$ ${precoComDesconto.toFixed(2)}`);
+    } else {
+        alert('Cupom inválido. Por favor, insira um cupom válido.');
+    }
+}
+let descontoAplicado = false;
+function aplicarCupom() {
+    if (descontoAplicado) {
+        alert('O desconto já foi aplicado. Não é possível usar o desconto mais de uma vez.');
+        return;
+    }
+    const cupomInput = document.getElementById('cupom');
+    const cupom = cupomInput.value.trim();
+    if (cupom === 'FIAP2024') {
+        const precoElement = document.getElementById('preco');
+        const precoTexto = precoElement.innerText;
+        const precoNumerico = parseFloat(precoTexto.replace('R$ ', ''));
+        const precoComDesconto = precoNumerico * 0.9;   
+        precoElement.innerText = `R$ ${precoComDesconto.toFixed(2)}`;
+        alert(`Preço com desconto: R$ ${precoComDesconto.toFixed(2)}`);        
+        descontoAplicado = true;
+    } else {
+        alert('Cupom inválido. Por favor, insira um cupom válido.');
+    }
+}
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
