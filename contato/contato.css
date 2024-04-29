@@ -1,112 +1,200 @@
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5dc;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc;
 }
 
 
 main {
-    padding: 20px;
-    min-height: 100vh;
-    margin-bottom: 150px;
+  padding: 20px;
+  min-height: 100vh;
+  margin-bottom: 150px;
 }
 
 section {
-    margin-bottom: 40px;
-    text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 
 
 section h2 {
-    color: #fff;
-    font-size: 35px;
-    font-style: bold;
-    padding: 0px 100px 0px 50px;
-    animation: 2s normal fade;
+  color: #fff;
+  font-size: 35px;
+  font-style: bold;
+  padding: 0px 100px 0px 50px;
+  animation: 2s normal fade;
 }
 
 
 section p {
-    line-height: 1.6;
+  line-height: 1.6;
 
 }
 
 section img{
-    height: 150px;
-    border: 200px ;
-    margin: 16px;
-    padding-right: 80px;
-    animation: 1.5s normal fade;
+  height: 150px;
+  border: 200px ;
+  margin: 16px;
+  padding-right: 80px;
+  animation: 1.5s normal fade;
 }
 
 
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #5e2129;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #5e2129;
+  color: #fff;
 }
 
 
 
 h1 {
-    animation: 1.5s normal fadetitle;
+  animation: 1.5s normal fadetitle;
+  text-align: left;
 }
 
 
 .subtitulo {
 
-    width: 800px;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    white-space: pre-line;
-    line-height: 28px;
-    font-size: 18px;
-    text-align: justify;
-    animation: fade 2s normal;
+  width: 800px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  white-space: pre-line;
+  line-height: 28px;
+  font-size: 18px;
+  text-align: justify;
+  animation: fade 2s normal;
+  margin-left: 20px;
 }
 
 .centro {
-    height: 400px;
-    margin-top: 18px;
-    background-color: #4b1e24;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
+  height: 400px;
+  margin-top: 18px;
+  background-color: #4b1e24;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+
+.texto {
+display: flex;
+flex-direction: column;
 }
 
 
+.entre{
+font-size: 30px;
+}
+
 
 .bold {
-    font-size: 28px;
+  font-size: 20px;
 }
 
 
 
 @keyframes fadetitle {
-	0% {
-		opacity: 0;
-		transform: translateX(-100px);
-	}
+0% {
+  opacity: 0;
+  transform: translateX(-100px);
+}
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+100% {
+  opacity: 1;
+  transform: translateX(0);
+}
 }
 
 @keyframes fade {
-    0% {
-        opacity: 0;
-    }
+  0% {
+      opacity: 0;
+  }
 
-    100% {
-        opacity: 100%;
-    }
+  100% {
+      opacity: 100%;
+  }
+}
+
+/* --------------*/
+
+.container{
+  background-color: #fafafa;
+  border-radius: 14px;
+  margin: 14px 30px ;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+  overflow: hidden;
+}
+
+.container:hover{
+  box-shadow: 4px 8px 8px 4px rgba(80, 39, 39, 0.4);
+  border-color: #4b1e24;
+}
+
+.header{
+  background: linear-gradient(120deg,  #4b1e24 0% , #6a2f3d 100%);
+  padding: 24px;
+  text-align: center;
+  color: #FFF;
+}
+
+.form{
+  padding: 18px;
+}
+
+.form-content{
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  position: relative;
+  text-align: left;
+}
+
+.form-content label{
+  display: inline-block;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.form-content input{
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid #dfdfdf;
+}
+
+.form-content a{
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button{
+  background-color:#4b1e24;
+  color: #FFF;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.form-content.error input{
+  border-color: #ff3b25;
+}
+
+.form-content.error a{
+  color: #ff3b25;
+  visibility: visible;
 }
