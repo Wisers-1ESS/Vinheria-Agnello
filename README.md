@@ -113,7 +113,7 @@ etc...
 ETC...
 ```
 <h4>Formulário no HTML</h4>
-<p>Utilizando: Label,Fprm, Input...</p>
+<p>Utilizando: Label,Form, Input...</p>
 
 ```
  <form id="form" class="form">
