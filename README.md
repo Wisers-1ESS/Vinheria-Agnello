@@ -36,6 +36,27 @@
 
 <p>Há uma segunda "section" onde foi utilizada da mesma forma que a anterior, mas para mostrar-mos a nossa equipe.</p>
 
+<p>Foram adicionadas animações no CSS da página para as imagens de cada integrante da equipe com "transition" e "transform". Quando passado o scroll por cima da imagem, ela da um pequeno zoom.</p>
+
+<p>Além de tudo, também é possível ver que as caixas de texto (que estão na cor vinho) estão responsivas de acordo com a escala de monitor.</p>
+
+<p>Estrutura do código:</p>
+
+```
+main 
+<section>
+<h1> - título
+hr
+div - centro
+<p> - texto sobre nós
+<a> - imagem
+<section>
+div - imagem das equipes
+<p> - texto sobre a equipe
+div - imagens
+<img> - 1 para cada membro da equipe
+<footer>
+```
 
 ### Quiz sobre Vinho
 
