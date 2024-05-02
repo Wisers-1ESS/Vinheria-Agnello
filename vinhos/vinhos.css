@@ -96,11 +96,15 @@ section {
     position: absolute;
     right: -.5rem;
     top: -.5rem;
-    transition: transform 0.3s;
+    transition: all 0.3s;
 }
 
-.favoritado:hover, .listado:hover {
+.vinho .actions img:hover{
     transform: scale(0.95);
+}
+
+.favoritado, .listado{
+    background-color: white !important;
 }
 
 .vinho .actions img.favoritar{
