@@ -67,3 +67,6 @@ form button:hover {
     transition: .2s;
     cursor: pointer;
 }
+footer{
+    position: fixed;
+}

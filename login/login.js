@@ -21,3 +21,26 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
   });
   
+  
+
+  //Codigo header (subir e descer)
+
+
+const header = document.querySelector('header');
+
+document.addEventListener('mouseover', function(event) {
+
+    if (event.clientY < 200) {
+
+        header.style.top = '0';
+    }
+});
+
+
+document.addEventListener('mouseout', function(event) {
+
+    if (event.clientY > 100) {
+
+        header.style.top = '-100px';
+    }
+});
