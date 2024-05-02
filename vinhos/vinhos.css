@@ -11,9 +11,14 @@ main{
 }
 
 h1 {
+    animation: 1.5s normal fadetitle;
     text-align: center;
     margin: 1rem;
     font-size: 2rem;
+}
+
+.subtitulo{
+    animation: 1.5s normal fade;
 }
 section {
     display: flex;
@@ -28,7 +33,7 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     padding: 1rem;
-
+    animation: slidein 1s normal;
 }
 
 .vinho{
@@ -64,6 +69,11 @@ section {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.vinho a:hover {
+    background-color: #76313c;
 }
 
 .vinho .actions {
@@ -96,3 +106,4 @@ section {
 .vinho .actions img.favoritar{
     margin-right: 55px;
 }
+

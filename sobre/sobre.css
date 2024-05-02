@@ -40,9 +40,8 @@ h1 {
 /* Sobre nós | Titulo e Subtitulo */
 
 .subtitulo {
-    margin-right: 1rem;
+    margin: 0 1rem 0 2rem;
     color: rgb(255, 255, 255);
-    text-align: left;
     white-space: pre-line;
     line-height: 28px;
     font-size: 18px;
@@ -91,8 +90,7 @@ h1 {
 }
 
 .centro-equipe {
-    height: 450px;
-    margin-top: 18px;
+    padding: 2rem;
     background-color: #4b1e24;
     display: flex;
     align-items: center;
@@ -104,27 +102,6 @@ h1 {
     font-size: 28px;
 }
 
-@keyframes fadetitle {
-	0% {
-		opacity: 0;
-		transform: translateX(-100px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
 
 @media screen and (max-width:1240px) {
     /*.centro{ 

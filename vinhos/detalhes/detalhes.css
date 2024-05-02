@@ -75,6 +75,12 @@ section{
     border: none;
     cursor: pointer;
     font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.buy:hover{
+    background-color: #76313c;
+    color: white;
 }
 
 .quantidade{
@@ -140,11 +146,18 @@ section{
     background-color: #5e2129;
     color: white;
     font-weight: 600;
+    transition: background-color 0.3s;
 }
+
+.cupom button:hover{
+    background-color: #76313c;
+    color: white;
+}   
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    margin-top: 1rem;
+    border: 1px solid #5e2129;
+    background-color: #ffffff;
 }
 
 .tab button {
@@ -158,18 +171,22 @@ section{
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #5e2129;
+    color: white;
 }
 
 .tab button.active {
-    background-color: #ccc;
+    background-color: #5e2129;
+    color: white;
 }
 
 .tabcontent {
+    margin: 0 0 2rem;
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    animation: slidein .3s;
 }
 
 .food-images {
@@ -184,3 +201,9 @@ section{
     height: 200px;
     margin: 10px;
 }
+
+#container {
+    transition: all 0.3s;
+    animation: slidein 0.5s;
+}
+
