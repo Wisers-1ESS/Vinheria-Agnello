@@ -102,6 +102,15 @@ h1 {
     font-size: 28px;
 }
 
+/* Animação das imagens de equipe */
+
+.imagem-equipe{
+    transition: 1s;
+  }
+  
+  .imagem-equipe:hover{
+    transform: scale(1.2);
+  }
 
 @media screen and (max-width:1240px) {
     /*.centro{ 
