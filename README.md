@@ -20,8 +20,15 @@
 
 ### 🍷Página de Vinhos🍷
 
-<p>A página de vinhos se incia com o menu, e logo depois uma div main, dentro dela está uma section que é responsável por agrupar os elementos relacionados ao catálogo de vinhos.</p>
+<p>A página de vinhos se incia com o menu padrão, e logo depois uma div main, dentro dela está a section que é responsável por agrupar os elementos relacionados ao catálogo de vinhos, no final da página se encontra o footer padrão</p>
 
+<p>Estrutura da Section</p>
+
+> `Titulo`<br>`Subtitulo`<br>`div .vinhos`<br>`ㅤdiv .vinho`<br>`ㅤㅤdiv .actions`<br>`ㅤㅤimagem do vinho`<br>`ㅤㅤnome do vinho`<br>`ㅤㅤdescrição`<br>`ㅤㅤpreço`<br>`ㅤㅤcomprar`
+
+### Página de compra
+
+<p>A página de compra se incia com o menu padrão, e logo depois uma div main, dentro dela está sections que são responsáveis por agrupar os elementos relacionados a compra do vinho (nome, descrição, quantidade, valor total, cupom, imagem) e a sugestão de receitas. no fim se encontra também o footer padrão fixado na tela.</p>
 
 ### Sobre nós 📢
 
@@ -39,33 +46,11 @@
 
 <p> >Na parte "Main" do HTML foi iniciado com uma "section", onde foi utilizado o "H1" para fazer o título da página, seguido de de um "h2" destacar a frase "Entre em contato conosco via". Seguindo, vem uma Div com um "p" dentro para fazer o texto principal da página. Ao lado do texto foi utilizado uma imagem pela tag "img" da nossa logo, para deixar a página mais preenchida e bonita visualmente.</p>
 
+<h1>Checkpoint 02 de Front-End</h1>
 
-<h1>Checkpoint 02 de Web Development</h1>
-
-
-<h2>Objetivo: implementar recursos Javascript no site da vinheria.</h2>
-
-<a href="https://cherry-client-b8f.notion.site/CP2-JS-50ae6441e89a45bdbd0be6fbc2f4cd02">Documentação completa do CP2</a>
-
-**Deve conter:**
-
-- Tela inicial perguntando se o usuário possui mais de 18 anos - Enzo
-    - Caso seja menor de idade, redirecionar para outro site
-    - Caso seja maior, redirecionar para home page
-- Botão de compra para cada vinho - M. Queiroz
-    - Levar para uma página de mais detalhes do vinho e lá dentro, ao comprar, gerar um pop up com a mensagem(adicionado ao carrinho com sucesso)
-- Calculadora de preços baseado na quantidade de garrafas - Matheus
-    - Dependendo de quantas garrafas a pessoa escolher, vai mostrando o valor total
-- Página de login simples - Marcela
-    - If e else com login genérico(1234 como login e senha)
-- Opção de cupom de desconto. Ao digitar no campo de desconto e clicar em Aplicar - Lucas
-    - Se o cupom for FIAP2024 o preço terá 10% de desconto
-- Sugestão de combinações de comidas baseados no vinho - Lucas
-    - Página de sugestões que baseado na escolha do vinho, a página mostra algumas receitas que combinam.
-- Formulário de contato - M. Vinícius
-    - Formulário simples de contato com Nome, telefone, email e mensagem e um botão enviar que irá gerar um pop up de mensagem enviada com sucesso.
-
-## Opcionais
-
-- Sistema de avaliações de comentários - M. Vinícius
-- Botão de favoritar e lista de desejos - M. Queiroz
+- Atualize o README descrevendo a estrutura do projeto.
+- Uso das propriedades e valores corretamente (modificadores de texto, cores, listas, box modeling, pseudo classes, pseudo elementos, etc...).
+- Utilizem CSS externo.
+- Aplique transformações, transições e animações.
+- Aplicação de Flex para estruturação das páginas.
+- Critérios de avaliação: estrutura do site (organização), design e estética, códigos HTML e CSS, conteúdo e qualidade.
