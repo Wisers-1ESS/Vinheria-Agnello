@@ -7,20 +7,15 @@
 }
 
 header {
-    position: fixed;
+   position: fixed;
     top: -100px;
-    /* Inicialmente fora da tela */
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: #ffffff;
     transition: top 0.3s;
-    /* Adiciona um efeito de transição suave */
     z-index: 1000;
-    /* Garante que a cabeça esteja acima de outros elementos */
     padding: 20px;
-    /* Adiciona algum espaçamento interno */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Adiciona uma sombra suave */
     font-family: 'Poppins', sans-serif;
     display: flex;
     width: 100%;
