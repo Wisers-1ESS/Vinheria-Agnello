@@ -10,32 +10,6 @@ function verificarIdade() {
 
 window.onload = verificarIdade;
 
-
-//Codigo header (subir e descer)
-
-
-const header = document.querySelector('header');
-
-document.addEventListener('mouseover', function(event) {
-
-    if (event.clientY < 100) {
-
-        header.style.top = '0';
-    }
-});
-
-
-document.addEventListener('mouseout', function(event) {
-
-    if (event.clientY > 100) {
-
-        header.style.top = '-100px';
-    }
-});
-
-
-
-
 // Faz com que os paragrafos sumam conforme a pagina rola
 
 const paragrafos = document.querySelectorAll('p');

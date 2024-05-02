@@ -15,28 +15,6 @@ function calculatePrice() {
 }
 
 
-//Codigo header (subir e descer)
-
-
-const header = document.querySelector('header');
-
-document.addEventListener('mouseover', function(event) {
-
-    if (event.clientY < 100) {
-
-        header.style.top = '0';
-    }
-});
-
-
-document.addEventListener('mouseout', function(event) {
-
-    if (event.clientY > 100) {
-
-        header.style.top = '-100px';
-    }
-});
-
 // if (localStorage.getItem('total')) {
 //     total = parseFloat(localStorage.getItem('total'));
 //     var divTotal = document.createElement('div');

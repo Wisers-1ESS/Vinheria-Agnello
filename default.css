@@ -9,7 +9,7 @@
 
 header {
     position: fixed;
-    top: -100px;
+    top: -80px;
     left: 0;
     width: 100%;
     background-color: #ffffff;
@@ -19,6 +19,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     width: 100%;
+    height: 90px;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -28,6 +29,7 @@ header {
 
 header nav ul {
     display: flex;
+    margin-bottom: 0;
 }
 
 header nav ul li {
