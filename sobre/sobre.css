@@ -34,6 +34,8 @@ footer {
 }
 
 h1 {
+    color: rgb(0, 0, 0);
+    font-size: 42px;
     animation: 2s normal fadetitle;
 }
 
