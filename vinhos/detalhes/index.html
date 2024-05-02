@@ -1,57 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinho</title>
-    <link rel="stylesheet" href="./detalhes.css">
-    <link rel="stylesheet" href="../../default.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../vinhos/index.html">Vinhos</a></li>
-                <li><a href="../quiz/index.html">Quiz</a></li>
-                <li><a href="../sobre/index.html">Sobre nós</a></li>
-                <li><a href="../contato/index.html">Contato</a></li>
-                <li><a href="../Login/login.html">Login</a></li>
+    <link rel="stylesheet" href="./detalhes.css" />
+    <link rel="stylesheet" href="../../default.css" />
+  </head>
 
-            </ul>
-        </nav>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../">Vinhos</a></li>
+          <li><a href="../../quiz/index.html">Quiz</a></li>
+          <li><a href="../../sobre/index.html">Sobre nós</a></li>
+          <li><a href="../../contato/index.html">Contato</a></li>
+          <li><a href="../../login/login.html">Login</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section>
-            <div class="vinho">
-                <img src="../../assets/vinhos/default.svg" alt="Vinho" id="imagem">
-                <div class="infos">
-                    <h2 id="nome">Nome do Vinho</h2>
-                    <p id="descricao">Descrição do Vinho</p>
-                    <p id="preco">Preço</p>
-                                                                <!-- AQUI É PRA FAZER O SISTEMA DE QUANTIDADE -- ENZO -->
-                    <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
-                        <span>1</span>
-                        <button onclick="aumentar()">+</button>
-                    </div>
-                    <a onclick="comprar()" class="buy">Comprar</a>
-                                                                <!-- AQUI É PRA FAZER O SISTEMA DE CUPOM -- LUCAS -->
-                    <div class="cupom">
-                        <input type="text" id="cupom" placeholder="Cupom de desconto">
-                        <button onclick="aplicarCupom()">Aplicar</button>
-                    </div>
-                </div>
+      <section id="container">
+        <div class="vinho">
+          <img src="../../assets/vinhos/default.svg" alt="Vinho" id="imagem" />
+          <div class="infos">
+            <h2 id="nome">Nome do Vinho</h2>
+            <p id="descricao">Descrição do Vinho</p>
+            <p id="preco">Preço</p>
+            <!-- AQUI É PRA FAZER O SISTEMA DE QUANTIDADE -- ENZO -->
+            <div class="quantidade">
+              <button onclick="diminuir()">-</button>
+              <span id="quantidade"></span>
+              <button onclick="aumentar()">+</button>
             </div>
-        </section>
-        <section>
-            <h2>Sugestão de combinações</h2>
-                                                                <!-- AQUI É PRA ADICIONAR AS RECEITAS E SUGESTÕES -- LUCAS -->
-        </section>
+            <a onclick="comprar()" class="buy">Comprar</a>
+            <!-- AQUI É PRA FAZER O SISTEMA DE CUPOM -- LUCAS -->
+            <div class="cupom">
+              <input type="text" id="cupom" placeholder="Cupom de desconto" />
+              <button onclick="aplicarCupom()">Aplicar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Sugestão de combinações de Vinhos e Comida</h2>
+        <!-- AQUI É PRA ADICIONAR AS RECEITAS E SUGESTÕES -- LUCAS -->
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'sauvignon')">
+            Matetic EQ Coastal Sauvignon Blanc 2021
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'estate')">
+            Doña Paula Estate
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'malbec')">
+            Zuccardi Q Malbec 2020
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'tawny')">
+            Fonseca Porto Tawny
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'douro')">
+            Vallado Douro Tinto 2021
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'noble')">
+            De Bortoli Noble One 2018
+          </button>
+        </div>
+
+        <div id="sauvignon" class="tabcontent">
+          <h2>Matetic EQ Coastal Sauvignon Blanc 2021</h2>
+          <div class="food-images">
+            <img
+              src="../../assets/Comidas.jpg/salada_camarao.jpg"
+              alt="Salada de Camarão"
+              title="Salada de Camarão"
+            />
+            <img
+              src="../../assets/Comidas.jpg/frango_grelhado.jpg"
+              alt="Frango Grelhado"
+              title="Frango Grelhado"
+            />
+            <img
+              src="../../assets/Comidas.jpg/sorvete_limao.jpg"
+              alt="Sorvete de Limão"
+              title="Sorvete de Limão"
+            />
+          </div>
+        </div>
+
+        <div id="estate" class="tabcontent">
+          <h2>Doña Paula Estate</h2>
+          <div class="food-images">
+            <img
+              src="../../assets/Comidas.jpg/frango_grelhado_legume.jpg"
+              alt="Frango grelhado com legumes"
+              title="Frango grelhado com legumes"
+            />
+            <img
+              src="../../assets/Comidas.jpg/massa_molho_branco_frutos_mar.jpg"
+              alt="Massa com molho branco e frutos do mar"
+              title="Massa com molho branco e frutos do mar"
+            />
+          </div>
+        </div>
+
+        <div id="malbec" class="tabcontent">
+          <h2>Zuccardi Q Malbec 2020</h2>
+          <div class="food-images">
+            <img
+              src="../../assets/Comidas.jpg/churrasco_argentino.jpg"
+              alt="Churrasco argentino"
+              title="Churrasco argentino"
+            />
+            <img
+              src="../../assets/Comidas.jpg/bife_chorizo_batatas_rusticas.jpg"
+              alt="Bife de chorizo com batatas rústicas"
+              title="Bife de chorizo com batatas rústicas"
+            />
+          </div>
+        </div>
+
+        <div id="tawny" class="tabcontent">
+          <h2>Fonseca Porto Tawny</h2>
+          <div class="food-images">
+            <img
+              src="../../assets/Comidas.jpg/queijo_azul.jpg"
+              alt="Queijo
+            azul"
+              title="Queijo azul"
+            />
+            <img
+              src="../../assets/Comidas.jpg/chocolate_amargo.jpg"
+              alt="Chocolate amargo"
+              title="Chocolate amargo"
+            />
+          </div>
+        </div>
+        <div id="douro" class="tabcontent">
+          <h2>Vallado Douro Tinto 2021</h2>
+          <div class="food-images">
+            <img
+              src="../../assets/Comidas.jpg/cabrito_assado.jpg"
+              alt="Cabrito assado"
+              title="Cabrito assado"
+            />
+            <img
+              src="../../assets/Comidas.jpg/bacalhau_bras.jpg"
+              alt="Bacalhau à brás"
+              title="Bacalhau à brás"
+            />
+          </div>
+        </div>
+
+        <div id="noble" class="tabcontent">
+          <h2>De Bortoli Noble One 2018</h2>
+          <div class="food-images">
+            <img
+              src="../../assets/Comidas.jpg/torta_frutas_secas.jpg"
+              alt="Torta de frutas secas"
+              title="Torta de frutas secas"
+            />
+            <img
+              src="../../assets/Comidas.jpg/foie_gras_compota_figo.jpg"
+              alt="Foie gras com compota de figo"
+              title="Foie gras com compota de figo"
+            />
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="detalhes.js"></script>
     <footer>
-        <p>&copy; 2024 - Vinharia Agnello</p>
+      <p>&copy; 2024 - Vinharia Agnello</p>
     </footer>
-</body>
+    <script src="detalhes.js"></script>
+  </body>
 </html>

@@ -1,68 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contatos</title>
-    <link rel="stylesheet" href="./contato.css">
-    <link rel="stylesheet" href="../default.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./contato.css" />
+    <link rel="stylesheet" href="../default.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../vinhos">Vinhos</a></li>
-                <li><a href="../quiz">Quiz</a></li>
-                <li><a href="../sobre">Sobre nós</a></li>
-                <li><a href="../contato">Contato</a></li>
-                <li><a href="../login/login.html">Login</a></li>
-
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../vinhos">Vinhos</a></li>
+          <li><a href="../quiz">Quiz</a></li>
+          <li><a href="../sobre">Sobre nós</a></li>
+          <li><a href="../contato">Contato</a></li>
+          <li><a href="../login/login.html">Login</a></li>
+        </ul>
+      </nav>
     </header>
 
-
     <main>
+      <section>
+        <h1 style="color: rgb(0, 0, 0); font-size: 42px">Contato</h1>
+        <hr class="line" />
 
-        <section>
+        <div class="centro">
+          <div class="texto">
+          <h2 class="entre">Entre em contato conosco via:</h2>
 
-            
-            <h1 style="color: rgb(0, 0, 0); font-size: 42px;">Contato</h1>
-            <hr class="line">
-            
-            
-            
-            
-            <div class="centro">
-                
-                <h2>Entre em contato conosco via:</h2>
-                
-                
-                <p class="subtitulo">
-                    <b class="bold">Email:</b>
-                        vinheriaagnello@gmail.com
-                
-                    <b class="bold">Telefone:</b>
-                        (55) 1234-5678
-                    
-                    <b class="bold">Endereço:</b>
-                        Rua das Vinhas, 123 - Vale dos Vinhedos, Vinhedo
-            
-                    </p>
-                    
-                <img class="imagem-logo" alt="Logo WineWise" src="../assets/logo.jpg"> 
-                    
-                </div>
+          <p class="subtitulo">
+            <b class="bold">Email:</b>
+            vinheriaagnello@gmail.com
+
+            <b class="bold">Telefone:</b>
+            (55) 1234-5678
+
+            <b class="bold">Endereço:</b>
+            Rua das Vinhas, 123 - Vale dos Vinhedos, Vinhedo
+          </p>
+          </div>
+
+          <div class="container">
+            <section class="header">
+              <h2>Enviar Email</h2>
             </section>
-                
-    </main>
+        
+            <form id="form" class="form">
+              <div class="form-content">
+                <label for="username">Nome</label>
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Digite o seu nome..."
+                />
+                <a>Aqui vai a mensagem de erro....</a>
+              </div>
+        
+              <div class="form-content">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Digite o seu email..."
+                />
+                <a>Aqui vai a mensagem de erro....</a>
+              </div>
+        
+              <div class="form-content">
+                <label for="msgtxt">Mensagem</label>
+                <input
+                  type="text"
+                  id="msgtxt"
+                  placeholder="Digite sua Mensagem..."
+                />
+                <a>Aqui vai a mensagem de erro....</a>
+              </div>
+        
+        
+              <button type="submit">Enviar</button>
+        
+            </form>
+        
+          </div>
 
+          
+        </div>
+      </section>
+    </main>
+      
+    
+    
 
     <footer>
-        <p>&copy; 2024 - Vinharia Agnello</p>
+      <p>&copy; 2024 - Vinharia Agnello</p>
     </footer>
 
-</body>
+    <script src="./contato.js"></script>
+  </body>
 </html>

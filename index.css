@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +7,20 @@
 }
 
 header {
+    position: fixed;
+    top: -100px;
+    /* Inicialmente fora da tela */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    transition: top 0.3s;
+    /* Adiciona um efeito de transição suave */
+    z-index: 1000;
+    /* Garante que a cabeça esteja acima de outros elementos */
+    padding: 20px;
+    /* Adiciona algum espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra suave */
     font-family: 'Poppins', sans-serif;
     display: flex;
     width: 100%;
@@ -31,6 +44,10 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #ffffff;
+}
+
+p {
+    transition: opacity 0.3s;
 }
 
 footer {
@@ -105,16 +122,23 @@ body {
     color: #000000;
 }
 
-#mercado, #quiz, #sobrenós {
+#mercado,
+#quiz,
+#sobrenós {
     background-color: #f5f5dc;
 }
 
-#mercado p, #quiz p, #Sobrenós p {
+#mercado p,
+#quiz p,
+#Sobrenós p {
     font-size: 18px;
     color: #000000;
 }
 
-#mercado a, #quiz a, #Sobrenós a, #contato a {
+#mercado a,
+#quiz a,
+#Sobrenós a,
+#contato a {
     font-size: 18px;
     color: #000000;
 }
@@ -124,7 +148,8 @@ body {
     padding: 60px 0;
 }
 
-#Sobrenós h2, #quiz h2 {
+#Sobrenós h2,
+#quiz h2 {
     font-size: 32px;
     color: #000000;
 }
@@ -186,12 +211,12 @@ body {
     flex-direction: column;
 }
 
-#LinksFooter ul li a{
+#LinksFooter ul li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-#LinksFooter ul li a:hover{
+#LinksFooter ul li a:hover {
     color: #551616;
 }
 
@@ -206,5 +231,3 @@ footer {
     align-items: center;
     margin: 0px;
 }
-
-
