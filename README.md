@@ -17,6 +17,9 @@
 <p>Dentro das sections foram introduzidos textos e links através da tag /a href=""/ para levar quem clicar no texto a outra página, sendo ela a respectiva mostrada dentro do site. </p>
 <p>No final do site temos a tag footer, que é o rodapé da página. Nele foi feito o "&copy Vinheria Agnello. Todos os direitos reservados." como forma de copyright, além de ter mais uma sessão em forma de lista levando as respectivas sessões listadas dentro da mesma página.</p>
 
+### Alteração na Main Page
+<p> Foi adicionado uma transição simples entre a header e a pagina. Foi utilizado também um sistema onde quando a pagina desce, os paragrafos vão aparecendo, e os de cima subindo.</p>
+
 
 ### 🍷Página de Vinhos🍷
 
