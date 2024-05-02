@@ -68,7 +68,64 @@ div - imagens
 
 ### Contatos 💬 
 
-<p> >Na parte "Main" do HTML foi iniciado com uma "section", onde foi utilizado o "H1" para fazer o título da página, seguido de de um "h2" destacar a frase "Entre em contato conosco via". Seguindo, vem uma Div com um "p" dentro para fazer o texto principal da página. Ao lado do texto foi utilizado uma imagem pela tag "img" da nossa logo, para deixar a página mais preenchida e bonita visualmente.</p>
+<p>Na parte "Main" do HTML foi iniciado com uma "section", onde foi utilizado o "H1" para fazer o título da página, seguido de de um "h2" destacar a frase "Entre em contato conosco via". Seguindo, vem uma Div com um "p" dentro para fazer o texto principal da página. Ao lado do texto foi utilizado introduzido um formulário funcional, para facilitar o contato. Neste formulário foi utilizado JavaScript, html e css. </p>
+
+<h4>Adições no JavaScript</h4>
+
+```
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  checkForm();
+})
+email.addEventListener("blur", () => {
+  checkInputEmail();
+})
+username.addEventListener("blur", () => {
+  checkInputUsername();
+})
+msgtxt.addEventListener("blur", () => {
+  checkInputmsgtxt();
+})
+
+etc...
+
+```
+<h4>Adições no CSS</h4>
+<p>Utilizando Pseudo-elementos e Classes</p>
+
+```
+.container{
+  background-color: #fafafa;
+  border-radius: 14px;
+  margin: 14px 30px ;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+  overflow: hidden;
+}
+
+.container:hover{
+  box-shadow: 4px 8px 8px 4px rgba(80, 39, 39, 0.4);
+  border-color: #4b1e24;
+}
+
+
+ETC...
+```
+<h4>Formulário no HTML</h4>
+<p>Utilizando: Label,Fprm, Input...</p>
+
+```
+ <form id="form" class="form">
+              <div class="form-content">
+                <label for="username">Nome</label>
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Digite o seu nome..."
+                   />
+
+```
 
 <h1>Checkpoint 02 de Front-End</h1>
 
